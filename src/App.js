@@ -4,6 +4,7 @@ import uuid from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TodoInput from "./components/ToDoInput";
 import TodoList from "./components/TodoList";
+import "./App.css";
 
 //added bootstrap
 export default class App extends Component {
@@ -65,7 +66,9 @@ export default class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-10 mx-auto col-md-8 mt-5">
-              <h3 className="text-capitalize text-center">To do input</h3>
+              <h3 className="text-capitalize text-center text-white">
+                To do input
+              </h3>
               <TodoInput
                 item={this.state.item}
                 handleChange={this.handleChange}
